@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "768485788777",
+    "firebase_url": "https://truthdare-34884.firebaseio.com",
+    "project_id": "truthdare-34884",
+    "storage_bucket": "truthdare-34884.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768485788777:android:6fa6c3f5353b89a6",
+        "android_client_info": {
+          "package_name": "truthdare.developer.com.truthdare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768485788777-vkejm5kfles7i7aiin98ugohtu3up2o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEPXCLitW7yK1kI1WDISbyLEzXdhSPx6c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

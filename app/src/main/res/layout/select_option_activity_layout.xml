@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="truthdare.developer.com.app.activities.SelectOptionActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView5"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/select_option_constraintlayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/option_truth_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="Select an Option?"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/option_dare_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/icon_dare"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="3dp"
+        app:civ_fill_color="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/option_truth_iv"
+        app:layout_constraintEnd_toEndOf="@+id/option_home_iv"
+        app:layout_constraintTop_toTopOf="@+id/option_truth_iv" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/option_truth_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/truth_icon"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="3dp"
+        app:civ_fill_color="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/adView5"
+        app:layout_constraintStart_toStartOf="@+id/option_home_iv"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/option_home_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_home"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/option_truth_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/option_truth_iv" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Truth or Dare?"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
